@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elaborated Example with Divisions</title>
+    <style>
+        .container {
+            border: 1px solid black;
+            padding: 10px;
+            margin: 10px;
+        }
+        .header {
+            background-color: lightblue;
+            padding: 10px;
+            text-align: center;
+        }
+        .content {
+            background-color: lightgreen;
+            padding: 10px;
+        }
+        .sidebar {
+            background-color: lightyellow;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        .main-content {
+            background-color: white;
+            padding: 10px;
+            border: 1px solid gray;
+        }
+        .footer {
+            background-color: lightcoral;
+            padding: 10px;
+            text-align: center;
+        }
+        .row {
+            display: flex;
+            gap: 10px;
+        }
+        .column {
+            flex: 1;
+            border: 1px solid gray;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Header Section</h1>
+            <!-- <p>Welcome to the elaborated example!</p> -->
+        </div>
+        <div class="content">
+            <div class="row">
+                <div class="sidebar">
+                    <h2>Sidebar</h2>
+                    <p>Links and additional information go here.</p>
+                </div>
+                <div class="main-content">
+                    <h2>Main Content</h2>
+                    <p>This is the main content area where most of the information is displayed.</p>
+                    <div class="row">
+                        <div class="column">
+                            <h3>Column 1</h3>
+                            <p>Details for column 1.</p>
+                        </div>
+                        <div class="column">
+                            <h3>Column 2</h3>
+                            <p>Details for column 2.</p>
+                        </div>
+                        <div class="column">
+                            <h3>Column 3</h3>
+                            <p>Details for column 3.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p>Footer Section</p>
+            <p>&copy; 2023 Divisions Example</p>
+        </div>
+    </div>
+</body>
+</html></div>

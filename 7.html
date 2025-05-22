@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Two Tables Example</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      table {
+        border-collapse: collapse;
+        width: 45%;
+        margin: 10px;
+        float: left;
+      }
+      th,
+      td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: center;
+      }
+      th {
+        background-color: #f4f4f4;
+        font-weight: bold;
+      }
+      tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+      tr:hover {
+        background-color: #f1f1f1;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Two Tables Example</h1>
+    <table>
+      <caption>
+        Table 1: Fruits
+      </caption>
+      <thead>
+        <tr>
+          <th>Fruit</th>
+          <th>Color</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Apple</td>
+          <td>Red</td>
+        </tr>
+        <tr>
+          <td>Banana</td>
+          <td>Yellow</td>
+        </tr>
+        <tr>
+          <td>Grapes</td>
+          <td>Green</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table>
+      <caption>
+        Table 2: Animals
+      </caption>
+      <thead>
+        <tr>
+          <th>Animal</th>
+          <th>Type</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Dog</td>
+          <td>Mammal</td>
+        </tr>
+        <tr>
+          <td>Eagle</td>
+          <td>Bird</td>
+        </tr>
+        <tr>
+          <td>Shark</td>
+          <td>Fish</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

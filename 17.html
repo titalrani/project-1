@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Exception Handling</title>
+  </head>
+  <body>
+    <h1>JavaScript Exception Handling Example</h1>
+    <button onclick="handleException()">Click to Test Exception</button>
+
+    <script>
+      function handleException() {
+        try {
+          // Intentionally causing an error
+          let result = undefinedVariable + 10;
+        } catch (error) {
+          // Handling the error
+          console.error("An error occurred:", error.message);
+          alert("An error occurred: " + error.message);
+        } finally {
+          // Code that will always execute
+          console.log("Execution completed.");
+        }
+      }
+    </script>
+  </body>
+</html>

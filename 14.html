@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Example</title>
+    <script>
+      // Function to check if a number is even or odd
+      function checkEvenOdd(number) {
+        if (number % 2 === 0) {
+          return `${number} is even.`;
+        } else {
+          return `${number} is odd.`;
+        }
+      }
+
+      // Function to calculate the sum of numbers in an array
+      function calculateSum(numbers) {
+        let sum = 0;
+        for (let i = 0; i < numbers.length; i++) {
+          sum += numbers[i];
+        }
+        return sum;
+      }
+
+      // Function to display results
+      function displayResults() {
+        const number = 7;
+        const evenOddResult = checkEvenOdd(number);
+
+        const numbersArray = [1, 2, 3, 4, 5];
+        const sumResult = calculateSum(numbersArray);
+
+        document.getElementById("output").innerHTML = `
+                <p>${evenOddResult}</p>
+                <p>Sum of [${numbersArray.join(", ")}] is ${sumResult}.</p>
+            `;
+      }
+    </script>
+  </head>
+  <body onload="displayResults()">
+    <h1>JavaScript Example Page</h1>
+    <div id="output"></div>
+  </body>
+</html>
