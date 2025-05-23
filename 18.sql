@@ -1,35 +1,17 @@
--- Create a new database
-CREATE DATABASE ExampleDB;
+-- 1. Create a database named "library"
+CREATE DATABASE library;
 
--- Use the newly created database
-USE ExampleDB;
+-- 2. Delete the database "library"
+DROP DATABASE library;
 
--- Create a table for storing users
-CREATE TABLE Users (
-    UserID INT AUTO_INCREMENT PRIMARY KEY,
-    Username VARCHAR(50) NOT NULL,
-    Email VARCHAR(100) NOT NULL UNIQUE,
-    PasswordHash VARCHAR(255) NOT NULL,
-    CreatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+-- 3. Create a table named "book_records" with specified columns
+CREATE TABLE book_records (
+    Book_Library_No INT PRIMARY KEY,
+    Book_Name VARCHAR(255) NOT NULL,
+    Author_Name VARCHAR(255) NOT NULL,
+    Book_Edition VARCHAR(50),
+    Price DECIMAL(10, 2)
 );
 
--- Create a table for storing posts
-CREATE TABLE Posts (
-    PostID INT AUTO_INCREMENT PRIMARY KEY,
-    UserID INT NOT NULL,
-    Title VARCHAR(255) NOT NULL,
-    Content TEXT NOT NULL,
-    CreatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (UserID) REFERENCES Users(UserID)
-);
-
--- Create a table for storing comments
-CREATE TABLE Comments (
-    CommentID INT AUTO_INCREMENT PRIMARY KEY,
-    PostID INT NOT NULL,
-    UserID INT NOT NULL,
-    CommentText TEXT NOT NULL,
-    CreatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (PostID) REFERENCES Posts(PostID),
-    FOREIGN KEY (UserID) REFERENCES Users(UserID)
-);
+-- 4. Delete the table "book_records"
+DROP TABLE book_records;
